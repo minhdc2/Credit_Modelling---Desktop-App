@@ -21,6 +21,7 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 
 ### 2.2 Model Configuration ###
 * **Step 1: Technically adjust original WoE of special bins based on defined rules**
+After transforming orginal features' values to WoE, further technical process can be performed to adjust WoE for special values such as missing, infinity, ...
 * Input:
 > 1. Single Factor Initial Binning.xlsx
 > 2. Selected Variables.xlsx
