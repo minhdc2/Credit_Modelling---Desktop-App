@@ -28,6 +28,8 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 * Output: 
 > 1. Adjusted WoE on Bins.xlsx
 
+![Step 1](./pic/step1.PNG)
+
 * **Step 2: Update revised WoE values for all features in both train and test dataset**
 * Input:
 > 1. Raw Data Train Set.csv
@@ -37,6 +39,8 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 > 1. Adjusted WoE Train Set.xlsx
 > 2. Adjusted WoE Test Set.xlsx
 
+![Step 2](./pic/step2.PNG)
+
 * **Step 3: Remove highly correlated features on given threshold**
 * Input:
 > 1. Correlation Threshold
@@ -44,6 +48,8 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 * Output: 
 > 1. Correlation Analysis Summary.xlsx
 > 2. Selected Features for Backward Elimination.xlsx
+
+![Step 3](./pic/step3.PNG)
 
 * **Step 4: Backward features elimination**
 * Input:
@@ -53,6 +59,8 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 
 * Output:
 > 1. Selected Features for Scenarios Combinations.xlsx
+
+![Step 4](./pic/step4.PNG)
 
 * **Step 5: Run scenarios combinations**
 * Input:
@@ -66,6 +74,8 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 > 1. Model Performance.txt
 > 2. Model Coefficient.txt
 
+![Step 5](./pic/step5.PNG)
+
 * **Step 6: Bootstrapping validation**
 * Input:
 > 1. Test Sampling %
@@ -73,3 +83,5 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 
 * Output: 
 > 1. Bootstrapping Performance.xlsx
+
+![Step 6](./pic/step6.PNG)
