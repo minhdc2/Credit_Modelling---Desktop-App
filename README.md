@@ -15,7 +15,7 @@ This app illustrates multivariate-analysis steps in **PD (Probability Default) m
 * GUI framework: Tkinter
 To navigate to specific steps, you can select options in menu **Steps** or click on buttons displayed.
 
-<span style="color:red;">(!) Option **Single Factor Analysis** has not been developed yet!</span>
+**(!) Option **Single Factor Analysis** has not been developed yet!**
 
 ![Figure 1: App GUI](./pic/gui.PNG)
 
