@@ -85,3 +85,17 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 > 1. Bootstrapping Performance.xlsx
 
 ![Step 6](./pic/step6.PNG)
+
+### 2.3 Execute Steps ###
+Click on **Save & Run** button in every page to navigate **Run** section.
+Here you can choose any group of steps to run. As you click on a step, the app will check if all input are filled completely.
+Finally, click **Run** button and wait till the app announces completion.
+
+![Run](./pic/run.PNG)
+
+### 3. Further Work ###
+* Complete Single Factor Analysis part
+* Apply other models than Logistic Regression
+* Deploy on Web App
+* Add features to help users grain more control of training model process without leaving from app
+* ...
