@@ -22,6 +22,7 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 ### 2.2 Model Configuration ###
 * **Step 1: Technically adjust original WoE of special bins based on defined rules** <br/>
 After transforming orginal features' values to WoE, further technical process can be performed to adjust WoE for special values such as missing, infinity, ...
+
 * Input:
 > 1. Single Factor Initial Binning.xlsx
 > 2. Selected Variables.xlsx
@@ -32,6 +33,8 @@ After transforming orginal features' values to WoE, further technical process ca
 ![Step 1](./pic/step1.PNG)
 
 * **Step 2: Update revised WoE values for all features in both train and test dataset**
+Update adjusted WoE to original train and test dataset for each feature. 
+
 * Input:
 > 1. Raw Data Train Set.csv
 > 2. Raw Data Test Set.csv
@@ -43,6 +46,8 @@ After transforming orginal features' values to WoE, further technical process ca
 ![Step 2](./pic/step2.PNG)
 
 * **Step 3: Remove highly correlated features on given threshold**
+Pick a correlation threshold to find set of features having pair correlation less than.
+
 * Input:
 > 1. Correlation Threshold
 
@@ -53,6 +58,10 @@ After transforming orginal features' values to WoE, further technical process ca
 ![Step 3](./pic/step3.PNG)
 
 * **Step 4: Backward features elimination**
+Run Logistic Regression for features selected in Step 3. Remove feature having highest P-value then re-run Logistic Regression for remaining features. The procedures are performed till there is no feature have p-value higher than given threshold.
+
+After that, similar algorithm is applied to remove features, which violate with VIF and Beta (Coefficient) threshold (e.g. coefficients should be negative)
+
 * Input:
 > 1. P-value Threshold
 > 2. VIF Threshold
@@ -64,6 +73,10 @@ After transforming orginal features' values to WoE, further technical process ca
 ![Step 4](./pic/step4.PNG)
 
 * **Step 5: Run scenarios combinations**
+Based on expert judgement, the number of features in final models should be determined in range of minimum and maximum number of features (this also depends on computation cost).
+
+All possible combinations of features are performed and only combinations pass P-value, VIF and Beta test will be exported for expert evaluation to choose final model.
+
 * Input:
 > 1. Min Features Number
 > 2. Max Features Number
@@ -78,6 +91,8 @@ After transforming orginal features' values to WoE, further technical process ca
 ![Step 5](./pic/step5.PNG)
 
 * **Step 6: Bootstrapping validation**
+Due to unbalanced default/non-default ratio in PD model, bootstrapping validation should be considered investigate model performance stability.
+
 * Input:
 > 1. Test Sampling %
 > 2. Number of Iterations
