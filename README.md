@@ -21,5 +21,55 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 
 ### 2.2 Model Configuration ###
 * **Step 1: Technically adjust original WoE of special bins based on defined rules**
+* Input:
+> 1. Single Factor Initial Binning.xlsx
+> 2. Selected Variables.xlsx
 
+* Output: 
+> 1. Adjusted WoE on Bins.xlsx
 
+* **Step 2: Update revised WoE values for all features in both train and test dataset**
+* Input:
+> 1. Raw Data Train Set.csv
+> 2. Raw Data Test Set.csv
+
+* Output: 
+> 1. Adjusted WoE Train Set.xlsx
+> 2. Adjusted WoE Test Set.xlsx
+
+* **Step 3: Remove highly correlated features on given threshold**
+* Input:
+> 1. Correlation Threshold
+
+* Output: 
+> 1. Correlation Analysis Summary.xlsx
+> 2. Selected Features for Backward Elimination.xlsx
+
+* **Step 4: Backward features elimination**
+* Input:
+> 1. P-value Threshold
+> 2. VIF Threshold
+> 3. Beta Threshold
+
+* Output:
+> 1. Selected Features for Scenarios Combinations.xlsx
+
+* **Step 5: Run scenarios combinations**
+* Input:
+> 1. Min Features Number
+> 2. Max Features Number
+> 3. P-value Threshold
+> 4. VIF Threshold
+> 5. Beta Threshold
+
+* Output: 
+> 1. Model Performance.txt
+> 2. Model Coefficient.txt
+
+* **Step 6: Bootstrapping validation**
+* Input:
+> 1. Test Sampling %
+> 2. Number of Iterations
+
+* Output: 
+> 1. Bootstrapping Performance.xlsx
