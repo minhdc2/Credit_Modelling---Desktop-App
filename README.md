@@ -10,3 +10,7 @@ This app illustrates multivariate-analysis steps in **PD (Probability Default) m
 * Step 5: Run scenarios combinations
 * Step 6: Bootstrapping validation
 
+## 2. How to use ##
+### 2.1 GUI ###
+![Figure 1: App GUI](./pic/gui.PNG)
+
