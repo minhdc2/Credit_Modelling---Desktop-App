@@ -59,7 +59,7 @@ Pick a correlation threshold to find set of features having pair correlation les
 
 * **Step 4: Backward features elimination** <br/>
 Run Logistic Regression for features selected in Step 3. Remove feature having highest P-value then re-run Logistic Regression for remaining features. The procedures are performed till there is no feature have p-value higher than given threshold.
-<br/>
+
 After that, similar algorithm is applied to remove features, which violate with VIF and Beta (Coefficient) threshold (e.g. coefficients should be negative)
 
 * Input:
@@ -73,7 +73,7 @@ After that, similar algorithm is applied to remove features, which violate with 
 ![Step 4](./pic/step4.PNG)
 
 * **Step 5: Run scenarios combinations** <br/>
-Based on expert judgement, the number of features in final models should be determined in range of minimum and maximum number of features (this also depends on computation cost).
+Based on expert judgement, the number of features in final models should be determined in range of minimum and maximum number of features (this also depends on computation cost). <br/>
 <br/>
 All possible combinations of features are performed and only combinations pass P-value, VIF and Beta test will be exported for expert evaluation to choose final model.
 
