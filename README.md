@@ -32,7 +32,7 @@ After transforming orginal features' values to WoE, further technical process ca
 
 ![Step 1](./pic/step1.PNG)
 
-* **Step 2: Update revised WoE values for all features in both train and test dataset**
+* **Step 2: Update revised WoE values for all features in both train and test dataset** <br/>
 Update adjusted WoE to original train and test dataset for each feature. 
 
 * Input:
@@ -45,7 +45,7 @@ Update adjusted WoE to original train and test dataset for each feature.
 
 ![Step 2](./pic/step2.PNG)
 
-* **Step 3: Remove highly correlated features on given threshold**
+* **Step 3: Remove highly correlated features on given threshold** <br/>
 Pick a correlation threshold to find set of features having pair correlation less than.
 
 * Input:
@@ -57,7 +57,7 @@ Pick a correlation threshold to find set of features having pair correlation les
 
 ![Step 3](./pic/step3.PNG)
 
-* **Step 4: Backward features elimination**
+* **Step 4: Backward features elimination** <br/>
 Run Logistic Regression for features selected in Step 3. Remove feature having highest P-value then re-run Logistic Regression for remaining features. The procedures are performed till there is no feature have p-value higher than given threshold.
 
 After that, similar algorithm is applied to remove features, which violate with VIF and Beta (Coefficient) threshold (e.g. coefficients should be negative)
@@ -72,7 +72,7 @@ After that, similar algorithm is applied to remove features, which violate with 
 
 ![Step 4](./pic/step4.PNG)
 
-* **Step 5: Run scenarios combinations**
+* **Step 5: Run scenarios combinations** <br/>
 Based on expert judgement, the number of features in final models should be determined in range of minimum and maximum number of features (this also depends on computation cost).
 
 All possible combinations of features are performed and only combinations pass P-value, VIF and Beta test will be exported for expert evaluation to choose final model.
@@ -90,7 +90,7 @@ All possible combinations of features are performed and only combinations pass P
 
 ![Step 5](./pic/step5.PNG)
 
-* **Step 6: Bootstrapping validation**
+* **Step 6: Bootstrapping validation** <br/>
 Due to unbalanced default/non-default ratio in PD model, bootstrapping validation should be considered investigate model performance stability.
 
 * Input:
