@@ -19,3 +19,7 @@ To navigate to specific steps, you can select options in menu **Steps** or click
 
 ![Figure 1: App GUI](./pic/gui.PNG)
 
+### 2.2 Model Configuration ###
+#### Step 1: Technically adjust original WoE of special bins based on defined rules ####
+
+
