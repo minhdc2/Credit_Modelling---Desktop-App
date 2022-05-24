@@ -1,7 +1,7 @@
 # Credit_Modelling---Desktop-App
 
 ## 1. Introduction ##
-This app illustrates multivariate-analysis steps in PD(Probability Default) model, which includes:
+This app illustrates multivariate-analysis steps in **PD (Probability Default) model**, which includes:
 
 * Step 1: Technically adjust original WoE of special bins based on defined rules
 * Step 2: Update revised WoE values for all features in both train and test dataset
