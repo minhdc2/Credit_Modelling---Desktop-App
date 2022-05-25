@@ -4,9 +4,9 @@ import gui.run_page as gr
 import sys
 from tkinter import Button, Text, messagebox
 
-correlation_result_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\correlation_result.xlsx'
 correlation_threshold = 0.7
-feat_af_corr_anal_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\manual_features_before_backward_forward.xlsx'
+correlation_result_path = 'D:\\sample\\output\\Correlation Analysis Summary.xlsx'
+feat_af_corr_anal_path = 'D:\\sample\\output\\Selected Features for Backward Elimination.xlsx'
 
 def saveThirdStepPaths(entries):
     global correlation_result_path

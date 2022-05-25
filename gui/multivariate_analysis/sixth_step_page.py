@@ -4,7 +4,7 @@ import gui.run_page as gr
 import sys
 from tkinter import Button, Text
 
-bootstrapping_performance_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\bootsrapping_performance.xlsx'
+bootstrapping_performance_path = 'D:\\sample\\output\\Bootstrapping Performance.xlsx'
 test_sampling_percent = 0.8
 iteration = 100
 

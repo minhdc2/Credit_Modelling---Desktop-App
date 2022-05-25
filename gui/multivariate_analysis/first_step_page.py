@@ -6,9 +6,9 @@ from tkinter import Button, Text
 import sys
 
 # A. STATIC VALUES
-binning_result_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\input_MESX\\Results binning.xlsx'
-variables_list_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\input_MESX\\ME&SX_keep_variables.xlsx'
-destination_path_1 = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\single_factor_analysis.xlsx'
+binning_result_path = 'D:\\sample\\input\\Single Factor Initial Binning.xlsx'
+variables_list_path = 'D:\\sample\\input\\Selected Variables.xlsx'
+destination_path_1 = 'D:\\sample\\output\\Adjusted WoE on Bins.xlsx'
 ############################################
 
 def saveFirstStepPaths(entries):

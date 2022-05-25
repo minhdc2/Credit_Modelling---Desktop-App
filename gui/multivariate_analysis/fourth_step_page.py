@@ -7,7 +7,7 @@ from tkinter import Button, Text, messagebox
 backward_pvalue_threshold = 0.05
 vif_threshold = 5
 beta_threshold = 0
-feat_af_feat_elim_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\manual_features_before_combinations.xlsx'
+feat_af_feat_elim_path = 'D:\\sample\\output\\Selected Features for Scenarios Combinations.xlsx'
 
 def saveFourthStepPaths(entries):
     global backward_pvalue_threshold

@@ -12,8 +12,8 @@ max_number = 17
 pvalue_threshold = 0.1
 vif_threshold = 5
 beta_threshold = 0
-model_performance_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\model_performance.txt'
-model_coefficient_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\model_coefficient.txt'
+model_performance_path = 'D:\\sample\\output\\Model Performance.txt'
+model_coefficient_path = 'D:\\sample\\output\\Model Coefficient.txt'
 
 def saveFifthStepPaths(entries):
     global min_number

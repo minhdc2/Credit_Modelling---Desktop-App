@@ -5,11 +5,11 @@ import pandas as pd
 import sys
 from tkinter import Button, Text, messagebox
 
-df_train_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\input_MESX\\Raw data for multivariate train set.csv'
-df_test_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\input_MESX\\Raw data for multivariate train set.csv'
+df_train_path = 'D:\\sample\\input\\Raw Data Train Set.csv'
+df_test_path = 'D:\\sample\\input\\Raw Data Test Set.csv'
 
-train_destination_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\train_dataset_after_technical_process_SB.xlsx'
-test_destination_path = 'D:\\2. F\\PwC\\0. Risk Consulting\\ACB\\output_MESX\\test_dataset_after_technical_process_SB.xlsx'
+train_destination_path = 'D:\\sample\\output\\Adjusted WoE Train Set.xlsx'
+test_destination_path = 'D:\\sample\\output\\Adjusted WoE Test Set.xlsx'
 
 def saveSecondStepPaths(entries):
     global df_train_path
